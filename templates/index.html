@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Password Strength Checker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 AI Powered Password Strength Checker</h1>
+        
+        <form method="POST">
+            <input type="text" name="password" placeholder="Enter Password" required>
+            <button type="submit">Check Strength</button>
+        </form>
+
+        {% if prediction %}
+            <h2>Result: {{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
